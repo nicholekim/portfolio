@@ -1,7 +1,6 @@
 function setup() {
   createCanvas(340, 460); // canvas size, based on the art's real dimension
-  smooth(); 
-  strokeWeight(2); 
+  smooth();
   background('#bebfba'); //background color
   
   //top circle
