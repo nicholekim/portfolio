@@ -15,7 +15,7 @@ function setup() {
   arc(170, 175, 95, 95, HALF_PI, PI);
   arc(170, 175, 85, 85, PI+HALF_PI, TWO_PI);
   arc(170, 175, 85, 85, HALF_PI, PI);
-  line(170, 132.5, 170, 217.5); // tried to replicate the thin lines as much as i could.
+  line(170, 132.5, 170, 217.5); // tried to replicate the thin lines as much as i could, but decided to make them easier to code.
   
   //left circle
   noStroke();
