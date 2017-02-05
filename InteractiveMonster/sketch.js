@@ -17,15 +17,15 @@ function draw() {
   background(0, 255, 255); // background set in Draw - helps reset the eye movement.
   minion(x, y); // calls the minion function below with perimeters x and y.
   if (page == 0) { // if statement saying when page equals to 0, Minion moves its eye left and right.
-    if (mouseX - x < 40 && mouseX - x > -40) { // if statement that prevents Minion's eye from leaving its face.
-      eyeDir = mouseX - x; // the value of the mouse's x-coordinate position minus x is assigned to the variable eyeDir 
-    }
-  } else { // else statement saying when page is not equal to 0, Minion bounces up and down.
-    y = y + jumpDir; // value y plus the value of jumpDir (the speed with which the monster moves) is assigned as the new value y
-    if (y + jumpValue > 565 || y + jumpValue < 280) { // if statement that limits the monster's movement to the size of the canvas
-      jumpDir = jumpDir * -1; // jumpDir is multiplied with -1 to switch the direction with which the monster moves.
-    }
+    eyeDir = mouseX - x; // the value of mouse's x-coordinate position minus x is assigned to the variable eyeDir
+    eyeDir = min(eyeDir, 45); // limits the eye movement on the right side
+    eyeDir = max(-45, eyeDir); // limits the eye movement on the left side
+} else { // else statement saying when page is not equal to 0, Minion bounces up and down.
+  y = y + jumpDir; // value y plus the value of jumpDir (the speed with which the monster moves) is assigned as the new value y
+  if (y + jumpValue > 565 || y + jumpValue < 280) { // if statement that limits the monster's movement to the size of the canvas
+    jumpDir = jumpDir * -1; // jumpDir is multiplied with -1 to switch the direction with which the monster moves.
   }
+}
 }
 
 // Function minion that consists of different body parts, which are also defined as separate functions.
