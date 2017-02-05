@@ -20,10 +20,19 @@ function draw() {
     eyeDir = mouseX - x; // the value of mouse's x-coordinate position minus x is assigned to the variable eyeDir
     eyeDir = min(eyeDir, 45); // limits the eye movement on the right side
     eyeDir = max(-45, eyeDir); // limits the eye movement on the left side
+<<<<<<< HEAD
 } else { // else statement saying when page is not equal to 0, Minion bounces up and down.
   y = y + jumpDir; // value y plus the value of jumpDir (the speed with which the monster moves) is assigned as the new value y
   if (y + jumpValue > 565 || y + jumpValue < 280) { // if statement that limits the monster's movement to the size of the canvas
     jumpDir = jumpDir * -1; // jumpDir is multiplied with -1 to switch the direction with which the monster moves.
+=======
+    }
+  } else { // else statement saying when page is not equal to 0, Minion bounces up and down.
+    y = y + jumpDir; // value y plus the value of jumpDir (the speed with which the monster moves) is assigned as the new value y
+    if (y + jumpValue > 565 || y + jumpValue < 280) { // if statement that limits the monster's movement to the size of the canvas
+      jumpDir = jumpDir * -1; // jumpDir is multiplied with -1 to switch the direction with which the monster moves.
+    }
+>>>>>>> 95933a9d08a6cfb56274935bae569299d390ed51
   }
 }
 }
