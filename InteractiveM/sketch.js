@@ -25,11 +25,6 @@ function draw() {
     if (y + jumpValue > 565 || y + jumpValue < 280) { // if statement that limits the monster's movement to the size of the canvas
       jumpDir = jumpDir * -1; // jumpDir is multiplied with -1 to switch the direction with which the monster moves.
     }
-  } else { // else statement saying when page is not equal to 0, Minion bounces up and down.
-    y = y + jumpDir; // value y plus the value of jumpDir (the speed with which the monster moves) is assigned as the new value y
-    if (y + jumpValue > 565 || y + jumpValue < 280) { // if statement that limits the monster's movement to the size of the canvas
-      jumpDir = jumpDir * -1; // jumpDir is multiplied with -1 to switch the direction with which the monster moves.
-    }
   }
 }
 
