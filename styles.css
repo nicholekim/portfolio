@@ -1,0 +1,30 @@
+body {
+  width: 800px;
+  margin: 50 auto;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #0A216C;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #4D3FFF;
+}
+
+br, p, a {
+  font-family: 'Sanchez', serif;
+}
+
+a:link {
+  color: #CC216C;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: hotpink;
+}
